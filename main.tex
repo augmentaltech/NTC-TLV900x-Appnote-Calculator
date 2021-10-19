@@ -1,15 +1,14 @@
-\documentclass[ngerman,a4paper]{article}
-\usepackage[margin=1.2in]{geometry}
-\usepackage[utf8]{inputenc}
+\documentclass[paper=a4]{scrartcl}
+\usepackage{polyglossia}
 \usepackage{chemfig}
+\usepackage{fullpage}
 \usepackage[version=3]{mhchem}
 \usepackage{multicol}
 \usepackage{titlesec}
 \usepackage{xparse}
 \usepackage{textcomp}
 \usepackage{gensymb}
-\usepackage[ngerman]{babel}
-\usepackage{isodate}
+\usepackage[british]{isodate}
 \usepackage{amssymb}
 \usepackage{pdfpages}
 \usepackage{lscape}
@@ -25,31 +24,29 @@
     urlcolor=black
 }
 
+\setdefaultlanguage[variant=british]{english}
+
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
-\title{NTC-Calculations}
+\title{NTC Appnote Calculator}
 \author{Jana Marie Hemsing}
 %\date{September 2021}
 
 \begin{document}
 
-%\maketitle
+\maketitle
 
-\begin{figure}[!htbp]
-  \centering
-  \includegraphics[width=\textwidth]{schematic.png}
-  \caption{Schematic}
-\end{figure}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{schematic.png}
+\end{center}
 
 \input{calculations.tex}
 
-\begin{figure}[!htbp]
-  \centering
+\begin{center}
   \includegraphics[width=\textwidth]{curve.png}
-  \caption{Schematic}
-\end{figure}
+\end{center}
 
 \end{document}
